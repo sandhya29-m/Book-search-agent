@@ -93,9 +93,12 @@ streamlit run app.py
 The application will open in your browser.
 
 ---
+
 ## Output
 
 <img width="824" height="416" alt="image" src="https://github.com/user-attachments/assets/7825b715-1fd6-4bf2-bf93-d3ce327b8626" />
+
+---
 
 ## Example
 
