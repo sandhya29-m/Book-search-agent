@@ -1,20 +1,20 @@
 # Book Search Agent
 
-A beginner-friendly AI Agent built using Python and OpenRouter Function Calling.
+An AI-powered Book Search Agent built with **Python**, **Streamlit**, **OpenRouter Function Calling**, and the **Google Books/Open Library API**.
 
-The agent can search for books using the Google Books API (or Open Library API) and answer user queries through tool calling.
+The agent uses an LLM with tool calling to search for books, retrieve book information from an external API, and provide conversational responses.
 
 ---
 
 ## Features
 
-- LLM-powered AI Agent
+- Search books by title, author, or subject
+- AI-powered responses using OpenRouter
 - Function Calling (Tool Calling)
-- Book Search Tool
-- Conversation Memory
-- System Prompt
-- Multi-step Agent Loop
-- External API Integration
+- Conversation memory
+- External Book API integration
+- Streamlit web interface
+- Beginner-friendly project structure
 
 ---
 
@@ -23,21 +23,22 @@ The agent can search for books using the Google Books API (or Open Library API) 
 ```
 book-search-agent/
 │
-├── main.py
-├── tools.py
-├── memory.py
-├── prompts.py
-├── memory.json
-├── .env
+├── app.py              # Streamlit UI
+├── main.py             # AI Agent
+├── tools.py            # Book Search Tool
+├── memory.py           # Conversation Memory
+├── prompts.py          # System Prompt
+├── memory.json         # Stores conversation history
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .env
 ```
 
 ---
 
 ## Installation
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/book-search-agent.git
@@ -45,7 +46,7 @@ git clone https://github.com/yourusername/book-search-agent.git
 cd book-search-agent
 ```
 
-### 2. Create a virtual environment
+### Create a virtual environment (Optional)
 
 Windows
 
@@ -61,7 +62,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -69,12 +70,12 @@ pip install -r requirements.txt
 
 ---
 
-## API Key
+## Environment Variables
 
-Create a `.env` file.
+Create a `.env` file in the project directory.
 
 ```env
-OPENROUTER_API_KEY=your_api_key_here
+OPENROUTER_API_KEY=your_openrouter_api_key
 ```
 
 Get your API key from:
@@ -83,11 +84,13 @@ https://openrouter.ai/
 
 ---
 
-## Run
+## Run the Streamlit App
 
 ```bash
-python main.py
+streamlit run app.py
 ```
+
+The application will open in your browser.
 
 ---
 
@@ -104,31 +107,38 @@ Author: James Clear
 Published: 2018
 
 Description:
-...
+Atomic Habits is a practical guide to building good habits,
+breaking bad ones, and achieving lasting personal growth...
 ```
 
 ---
 
 ## Technologies Used
 
-- Python 3
+- Python
+- Streamlit
 - OpenRouter API
 - Function Calling
 - Requests
 - python-dotenv
-- JSON Memory
 
 ---
 
 ## Future Improvements
 
-- Cover Images
-- ISBN Search
-- Book Recommendations
-- Author Search
-- Multiple Tools
-- GUI using Streamlit
-- Voice Assistant
+- Book cover images
+- Ratings and reviews
+- ISBN search
+- Author search
+- Favorite books
+- Download book information
+- Voice support
+
+---
+
+## License
+
+This project is intended for learning and educational purposes.
 
 ---
 
